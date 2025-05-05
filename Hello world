@@ -1,0 +1,12 @@
+//Paras Amrut Patil
+//PRN-24030331378018
+//Code-Hello World
+//Branch-VLSI
+
+#include<stdio.h>
+
+int main()
+{
+    printf("Hello World");
+    return 0;
+}
