@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number, digit1, digit2, digit3, sum;
+
+    // Input a 3-digit number
+    cout << "Enter a 3-digit number: ";
+    cin >> number;
+
+    // Validate if the number is 3 digits
+    if (number >= 100 && number <= 999) {
+        // Extract the digits
+        digit1 = number / 100;         // First digit (hundreds place)
+        digit2 = (number / 10) % 10;   // Second digit (tens place)
+        digit3 = number % 10;          // Third digit (ones place)
+
+        // Calculate the sum of digits
+        sum = digit1 + digit2 + digit3;
+
+        // Display the result
+        cout << "Sum of digits: " << sum << endl;
+    } else {
+        cout << "Please enter a valid 3-digit number!" << endl;
+    }
+
+    return 0;
+}
