@@ -1,0 +1,28 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int amount, notes_100, notes_50, notes_10, remaining;
+
+    // Input the amount in rupees
+    cout << "Enter the amount in rupees: ";
+    cin >> amount;
+
+    // Calculate number of 100-rupee notes
+    notes_100 = amount / 100;
+    remaining = amount % 100;
+
+    // Calculate number of 50-rupee notes from the remaining amount
+    notes_50 = remaining / 50;
+    remaining = remaining % 50;
+
+    // Calculate number of 10-rupee notes from the remaining amount
+    notes_10 = remaining / 10;
+
+    // Display the results
+    cout << "Number of 100-rupee notes: " << notes_100 << endl;
+    cout << "Number of 50-rupee notes: " << notes_50 << endl;
+    cout << "Number of 10-rupee notes: " << notes_10 << endl;
+
+    return 0;
+}
