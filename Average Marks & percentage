@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float physics, chemistry, math, biology;
+    
+    // Accept marks for each subject
+    cout << "Enter Physics marks (out of 100): ";
+    cin >> physics;
+    cout << "Enter Chemistry marks (out of 100): ";
+    cin >> chemistry;
+    cout << "Enter Math marks (out of 100): ";
+    cin >> math;
+    cout << "Enter Biology marks (out of 100): ";
+    cin >> biology;
+    
+    // Calculate total marks
+    float total_marks = physics + chemistry + math + biology;
+    
+    // Calculate average marks
+    float average_marks = total_marks / 4;
+    
+    // Calculate percentage (total marks out of 400)
+    float percentage = (total_marks / 400) * 100;
+    
+    // Display results
+    cout << "Total Marks: " << total_marks << endl;
+    cout << "Average Marks: " << average_marks << endl;
+    cout << "Percentage: " << percentage << "%" << endl;
+    
+    return 0;
+}
