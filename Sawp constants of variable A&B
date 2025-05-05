@@ -1,0 +1,25 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int a, b, temp;
+
+    // Input values for a and b
+    cout << "Enter value of A: ";
+    cin >> a;
+    cout << "Enter value of B: ";
+    cin >> b;
+
+    // Display original values
+    cout << "Before swapping: A = " << a << ", B = " << b << endl;
+
+    // Swap using a temporary variable
+    temp = a;
+    a = b;
+    b = temp;
+
+    // Display swapped values
+    cout << "After swapping: A = " << a << ", B = " << b << endl;
+
+    return 0;
+}
