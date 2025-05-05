@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int number;
+
+    // Input the number
+    cout << "Enter a number: ";
+    cin >> number;
+
+    // Check if the number is divisible by 10
+    if (number % 10 == 0) {
+        cout << number << " is divisible by 10." << endl;
+    } else {
+        cout << number << " is not divisible by 10." << endl;
+    }
+
+    return 0;
+}
