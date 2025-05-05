@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    float basic_salary, dearness_allowance, house_rent_allowance, gross_salary;
+
+    // Input the basic salary
+    cout << "Enter the basic salary of Ramesh: ";
+    cin >> basic_salary;
+
+    // Calculate dearness allowance (40% of basic salary)
+    dearness_allowance = 0.40 * basic_salary;
+
+    // Calculate house rent allowance (20% of basic salary)
+    house_rent_allowance = 0.20 * basic_salary;
+
+    // Calculate gross salary
+    gross_salary = basic_salary + dearness_allowance + house_rent_allowance;
+
+    // Display the results
+    cout << "Basic Salary: " << basic_salary << endl;
+    cout << "Dearness Allowance (40% of basic): " << dearness_allowance << endl;
+    cout << "House Rent Allowance (20% of basic): " << house_rent_allowance << endl;
+    cout << "Gross Salary: " << gross_salary << endl;
+
+    return 0;
+}
